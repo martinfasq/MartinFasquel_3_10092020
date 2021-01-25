@@ -1,0 +1,14 @@
+@import './utils/variables';
+@import './utils/variables';
+@import './utils/mixins';
+
+@import './vendors/normalize';
+
+@import './base/fonts';
+
+h2{
+    font-family: 'Shrikhand';
+}
+h3{
+    font-family: 'Roboto';
+}
