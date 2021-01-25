@@ -1,14 +1,19 @@
-@import './utils/variables';
+@import './base/fonts';
+@import './base/base';
+@import './base/typography';
+
+@import './components/button';
+
+@import './layout/footer';
+@import './layout/grid';
+@import './layout/header';
+
+@import './pages/home';
+
+@import './themes/default';
+
+@import './utils/functions';
 @import './utils/variables';
 @import './utils/mixins';
 
 @import './vendors/normalize';
-
-@import './base/fonts';
-
-h2{
-    font-family: 'Shrikhand';
-}
-h3{
-    font-family: 'Roboto';
-}

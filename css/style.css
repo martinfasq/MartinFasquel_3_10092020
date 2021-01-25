@@ -1,3 +1,22 @@
+@font-face {
+  font-family: 'Shrikhand';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../polices/shrikhand.eot") format("eot"), url("../polices/shrikhand.woff2") format("woff2"), url("../polices/shrikhand.woff") format("woff"), url("../polices/shrikhand.ttf") format("truetype"), url("../polices/shrikhand.svg") format("svg");
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: normal;
+  src: url("../polices/roboto.eot") format("embedded-opentype"), url("../polices/roboto.woff2") format("woff2"), url("../polices/roboto.woff") format("woff"), url("../polices/roboto.ttf") format("truetype"), url("../polices/roboto.svg") format("svg");
+}
+
+footer {
+  background-color: #353535;
+  color: #F6F6F6;
+}
+
 html {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
@@ -176,27 +195,5 @@ template {
 
 [hidden] {
   display: none;
-}
-
-@font-face {
-  font-family: 'Shrikhand';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../polices/shrikhand.eot") format("eot"), url("../polices/shrikhand.woff2") format("woff2"), url("../polices/shrikhand.woff") format("woff"), url("../polices/shrikhand.ttf") format("truetype"), url("../polices/shrikhand.svg") format("svg");
-}
-
-@font-face {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: normal;
-  src: url("../polices/roboto.eot") format("embedded-opentype"), url("../polices/roboto.woff2") format("woff2"), url("../polices/roboto.woff") format("woff"), url("../polices/roboto.ttf") format("truetype"), url("../polices/roboto.svg") format("svg");
-}
-
-h2 {
-  font-family: 'Shrikhand';
-}
-
-h3 {
-  font-family: 'Roboto';
 }
 /*# sourceMappingURL=style.css.map */
