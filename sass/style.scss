@@ -1,19 +1,19 @@
-@import './base/fonts';
-@import './base/base';
-@import './base/typography';
+@import 'utils/functions';
+@import 'utils/variables';
+@import 'utils/mixins';
 
-@import './components/button';
+@import 'base/fonts';
+@import 'base/base';
+@import 'base/typography';
 
-@import './layout/footer';
-@import './layout/grid';
-@import './layout/header';
+@import 'components/button';
 
-@import './pages/home';
+@import 'layout/footer';
+@import 'layout/grid';
+@import 'layout/header';
 
-@import './themes/default';
+@import 'pages/home';
 
-@import './utils/functions';
-@import './utils/variables';
-@import './utils/mixins';
+@import 'themes/default';
 
-@import './vendors/normalize';
+@import 'vendors/normalize';

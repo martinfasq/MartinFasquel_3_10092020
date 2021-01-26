@@ -1,0 +1,41 @@
+.menu {
+  border: purple solid 3px;
+  border-radius: 15px 15px;
+
+  &__container {
+    display: grid;
+  }
+
+  &__section {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    border: red solid 3px;
+    border-radius: 15px 15px 15px 15px;
+  }
+}
+
+.localisation {
+  border: hotpink solid 2px;
+  background-color: $colorbg;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.restaurants {
+  border: green solid 2px;
+  display: flex;
+  flex-direction: column;
+  background-color: $colorbg;
+  grid-gap: 10px;
+}
+
+.restaurant {
+  background-color: white;
+  border: blue solid 2px;
+  border-radius: 15px 15px 15px 15px;
+  box-shadow: 5px 5px 8px #dddbdb;
+}
