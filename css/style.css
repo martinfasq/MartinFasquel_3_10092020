@@ -53,12 +53,23 @@
   border-radius: 15px 15px 15px 15px;
 }
 
+.fonctionnement ol {
+  list-style: none;
+}
+
 .localisation {
   border: hotpink solid 2px;
   background-color: #F6F6F6;
   flex-direction: column;
   display: flex;
   justify-content: center;
+}
+
+.restaurant__picture {
+  max-width: 32rem;
+  max-height: 32rem;
+  width: 100%;
+  object-fit: cover;
 }
 
 .restaurants {
@@ -74,13 +85,6 @@
   border: blue solid 2px;
   border-radius: 15px 15px 15px 15px;
   box-shadow: 5px 5px 8px #dddbdb;
-}
-
-.restaurant__picture {
-  max-width: 32rem;
-  max-height: 32rem;
-  width: 100%;
-  object-fit: cover;
 }
 
 html {
