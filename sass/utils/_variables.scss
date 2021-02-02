@@ -1,12 +1,21 @@
-$colorprimary:#9356DC;
-$colorsecondary:#FF79DA;
-$colortertiary: #99E2D0;
-$colorbg:#F6F6F6;
-$colorfooter:#353535;
+$colorprimary: #9356dc;
+$colorsecondary: #ff79da;
+$colortertiary: #99e2d0;
+$colorbg: #f6f6f6;
+$colorfooter: #353535;
 
 $breakpoints: (
-  'mobile': (min-width: 599px),
-  'medium': (min-width: 1000px),
-  'large': (min-width: 1500px),
+  "mobile": (
+    min-width: 599px,
+  ),
+  "medium": (
+    min-width: 1000px,
+  ),
+  "large": (
+    min-width: 1500px,
+  ),
 );
 
+$fonttitle: "Shrikhand";
+
+$fonttext: "Roboto";

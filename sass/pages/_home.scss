@@ -1,22 +1,36 @@
-.restaurant__picture {
-    height: 12rem;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 15px 15px;
-  }
-
-  .restaurants {
-    border: green solid 2px;
-    display: flex;
-    flex-direction: column;
-    background-color: $colorbg;
-    grid-gap: 10px;
-    padding: 10px;
-  }
+.restaurants{
+  background-color: $colorbg;
+}
   
   .restaurant {
     background-color: white;
-    border: blue solid 2px;
     border-radius: 15px 15px 15px 15px;
     @include box-shadows;
+    
+    &__picture {
+      height: 12rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 15px 15px;
+    }
+
+    &__title{
+      padding-left: 5px;
+      margin:8px;
+    }
+
+    &__text{
+      padding-left: 5px;
+      padding-bottom: 12px;
+      margin: 8px;
+    }
+  }
+
+  h1, h2, h3{
+    font-family: $fonttitle;
+    font-weight: normal;
+  }
+
+  p{
+    font-family: $fonttext;
   }
