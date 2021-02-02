@@ -1,5 +1,6 @@
 .restaurants{
   background-color: $colorbg;
+  padding-bottom: 45px;
 }
   
   .restaurant {
@@ -11,7 +12,7 @@
       height: 12rem;
       width: 100%;
       object-fit: cover;
-      border-radius: 15px 15px;
+      border-radius: 15px 15px 0px 0px;
     }
 
     &__title{
