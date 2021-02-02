@@ -1,7 +1,16 @@
-.localisation {
-    border: hotpink solid 2px;
-    background-color: $colorbg;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
+.local {
+  display: flex;
+  justify-content: center;
+  padding: 12px ;
+  background-color: rgb(226,226,226);
+  font-size: 1rem;
+
+  &__icon {
+    margin-right: 1rem;
   }
+
+  &__text {
+    font-weight: 350;
+    font-family: "Roboto";
+  }
+}

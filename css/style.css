@@ -12,6 +12,20 @@
   src: url("../polices/roboto.eot") format("embedded-opentype"), url("../polices/roboto.woff2") format("woff2"), url("../polices/roboto.woff") format("woff"), url("../polices/roboto.ttf") format("truetype"), url("../polices/roboto.svg") format("svg");
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Shrikhand";
+}
+
+p {
+  font-family: "Roboto";
+}
+
+.intro__btn {
+  text-align: center;
+}
+
 .footer {
   background-color: #353535;
   color: #F6F6F6;
@@ -53,23 +67,87 @@
   border-radius: 15px 15px 15px 15px;
 }
 
-.fonctionnement ol {
-  list-style: none;
-}
-
-.localisation {
-  border: hotpink solid 2px;
-  background-color: #F6F6F6;
-  flex-direction: column;
+header {
   display: flex;
   justify-content: center;
 }
 
+.fonctionnement ol {
+  list-style: none;
+  counter-reset: item;
+}
+
+.fonctionnement li {
+  background-color: #F6F6F6;
+  padding: 15px 25px 15px 15px;
+  border-radius: 15px 15px;
+  width: 80%;
+  text-align: start;
+  counter-increment: item;
+  margin-bottom: 5px;
+}
+
+.fonctionnement li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #9356DC;
+  border-radius: 100%;
+  color: white;
+  width: 1.2em;
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  left: -24px;
+}
+
+.fonctionnement i {
+  margin-right: 54px;
+  margin-left: 32px;
+}
+
+.local {
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+  background-color: #e2e2e2;
+  font-size: 1rem;
+}
+
+.local__icon {
+  margin-right: 1rem;
+}
+
+.local__text {
+  font-weight: 350;
+  font-family: "Roboto";
+}
+
+.intro {
+  background-color: #F6F6F6;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.intro__title {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.intro__text {
+  text-align: center;
+  padding: 0px 20px 10px 20px;
+}
+
+.intro__btn {
+  padding-bottom: 25px;
+}
+
 .restaurant__picture {
-  max-width: 32rem;
-  max-height: 32rem;
+  height: 12rem;
   width: 100%;
   object-fit: cover;
+  border-radius: 15px 15px;
 }
 
 .restaurants {
@@ -78,6 +156,7 @@
   flex-direction: column;
   background-color: #F6F6F6;
   grid-gap: 10px;
+  padding: 10px;
 }
 
 .restaurant {
@@ -118,6 +197,8 @@ pre {
 
 a {
   background-color: transparent;
+  text-decoration: none;
+  color: black;
 }
 
 abbr[title] {

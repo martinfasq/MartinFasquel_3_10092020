@@ -1,6 +1,22 @@
 .restaurant__picture {
-    max-width: 32rem;
-    max-height: 32rem;
+    height: 12rem;
     width: 100%;
     object-fit: cover;
+    border-radius: 15px 15px;
+  }
+
+  .restaurants {
+    border: green solid 2px;
+    display: flex;
+    flex-direction: column;
+    background-color: $colorbg;
+    grid-gap: 10px;
+    padding: 10px;
+  }
+  
+  .restaurant {
+    background-color: white;
+    border: blue solid 2px;
+    border-radius: 15px 15px 15px 15px;
+    @include box-shadows;
   }
