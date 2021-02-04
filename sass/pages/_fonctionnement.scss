@@ -1,0 +1,38 @@
+.fonctionnement {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  ol {
+    list-style: none;
+  }
+  li {
+    background-color: $colorbg;
+    padding: 15px 25px 15px 15px;
+    border-radius: 15px 15px;
+    width: 80%;
+    text-align: start;
+    counter-increment: item;
+    margin-bottom: 5px;
+    font-weight: 400;
+  }
+  li:before {
+    content: counter(item);
+    background: $colorprimary;
+    border-radius: 100%;
+    color: white;
+    width: 1.2em;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: -24px;
+  }
+  li:hover {
+    background-color: #f5edff;
+  }
+
+  i {
+    margin-right: 23px;
+  }
+  &__title {
+    padding-left: 15px;
+  }
+}
