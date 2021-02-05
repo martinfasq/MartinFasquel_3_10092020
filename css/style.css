@@ -141,6 +141,7 @@ p {
   flex-direction: column;
   margin: 5px;
   background-color: white;
+  box-shadow: 5px 5px 8px #dddbdb;
 }
 
 .menu__picture {
@@ -153,24 +154,33 @@ p {
   float: inline-end;
 }
 
-.menu p {
-  margin: 0;
-}
-
 .menu h1 {
   padding-top: 40px;
   padding-left: 20px;
 }
 
+.menu h2 {
+  font-family: "Roboto";
+  border-bottom: 3px #99e2d0 solid;
+  padding-left: 15px;
+  font-size: 1.1rem;
+}
+
 .menu h3 {
   margin: 0;
   padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 5px;
 }
 
-.menu h2 {
-  font-family: "Roboto";
-  text-decoration: underline green;
+.menu p {
+  margin: 0;
   padding-left: 15px;
+  padding-bottom: 8px;
+}
+
+.menu span {
+  padding-right: 8px;
 }
 
 .fonctionnement {

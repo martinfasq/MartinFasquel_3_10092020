@@ -8,6 +8,7 @@
     flex-direction: column;
     margin: 5px;
     background-color: white;
+    @include box-shadows;
   }
   &__picture {
     height: 12rem;
@@ -17,21 +18,30 @@
   &__price {
     float: inline-end;
   }
-  p {
-    margin: 0;
-  }
-h1{
-padding-top: 40px;
-padding-left: 20px;
-}
 
-  h3 {
-    margin: 0;
-    padding-left: 15px ;
+  h1 {
+    padding-top: 40px;
+    padding-left: 20px;
   }
   h2 {
     font-family: $fonttext;
-    text-decoration: underline green;
+    border-bottom: 3px $colortertiary solid;
     padding-left: 15px;
+    font-size: 1.1rem;
+  }
+  h3 {
+    margin: 0;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+  }
+  p {
+    margin: 0;
+    padding-left: 15px;
+    padding-bottom: 8px;
+  }
+
+  span{
+    padding-right: 8px;
   }
 }
