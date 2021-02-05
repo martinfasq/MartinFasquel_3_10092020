@@ -54,8 +54,7 @@
 }
 
 .menu {
-  border: purple solid 3px;
-  border-radius: 15px 15px;
+  border-radius: 35px 35px;
 }
 
 .menu__container {
@@ -68,7 +67,6 @@
 }
 
 .menu__item {
-  border: red solid 3px;
   border-radius: 15px 15px 15px 15px;
 }
 
@@ -79,9 +77,19 @@
   padding: 10px;
 }
 
-header {
+.header {
   display: flex;
   justify-content: center;
+}
+
+.header__arrow {
+  position: absolute;
+  left: 16px;
+  top: 30px;
+}
+
+.header__arrow:hover {
+  transform: scale(1.15);
 }
 
 .restaurants {
@@ -122,11 +130,47 @@ p {
   font-family: "Roboto";
 }
 
+.menu {
+  background-color: #f6f6f6;
+  margin-top: -50px;
+  position: relative;
+}
+
+.menu__item {
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+  background-color: white;
+}
+
 .menu__picture {
   height: 12rem;
   width: 100%;
   object-fit: cover;
-  position: relative;
+}
+
+.menu__price {
+  float: inline-end;
+}
+
+.menu p {
+  margin: 0;
+}
+
+.menu h1 {
+  padding-top: 40px;
+  padding-left: 20px;
+}
+
+.menu h3 {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.menu h2 {
+  font-family: "Roboto";
+  text-decoration: underline green;
+  padding-left: 15px;
 }
 
 .fonctionnement {

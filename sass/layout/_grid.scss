@@ -1,6 +1,5 @@
 .menu {
-  border: purple solid 3px;
-  border-radius: 15px 15px;
+  border-radius: 35px 35px;
 
   &__container {
     display: grid;
@@ -12,7 +11,6 @@
   }
 
   &__item {
-    border: red solid 3px;
     border-radius: 15px 15px 15px 15px;
   }
 }
