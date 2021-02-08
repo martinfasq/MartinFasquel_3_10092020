@@ -1,37 +1,63 @@
-.restaurants{
+.restaurants {
   background-color: $colorbg;
   padding-bottom: 45px;
 }
-  
-  .restaurant {
-    background-color: white;
-    border-radius: 15px 15px 15px 15px;
-    @include box-shadows;
-    
-    &__picture {
-      height: 12rem;
-      width: 100%;
-      object-fit: cover;
-      border-radius: 15px 15px 0px 0px;
-    }
 
-    &__title{
-      padding-left: 5px;
-      margin:8px;
-    }
+.restaurant {
+  background-color: white;
+  border-radius: 15px 15px 15px 15px;
+  @include box-shadows;
 
-    &__text{
-      padding-left: 5px;
-      padding-bottom: 12px;
-      margin: 8px;
-    }
+  &__picture {
+    height: 12rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 15px 15px 0px 0px;
   }
 
-  h1, h2, h3{
-    font-family: $fonttitle;
-    font-weight: normal;
+  &__title {
+    padding-left: 5px;
+    margin: 8px;
   }
 
-  p{
-    font-family: $fonttext;
+  &__text {
+    padding-left: 5px;
+    padding-bottom: 12px;
+    margin: 8px;
+
+    i {
+      float: inline-end;
+    }
   }
+}
+
+h1 {
+  font-family: $fonttitle;
+  font-weight: normal;
+}
+
+p,
+h2,
+h3 {
+  font-family: $fonttext;
+}
+
+h2,
+h3 {
+  font-family: $fonttext;
+  font-weight: bold;
+  letter-spacing: -0.021em;
+}
+
+.fa-heart {
+  padding: 0.2em;
+}
+.fa-heart::before {
+  content: "heart";
+  font-weight: bold;
+  transition: color 1s ease-out;
+}
+.fa-heart:hover::before {
+  color: $colorprimary;
+  cursor: pointer;
+}

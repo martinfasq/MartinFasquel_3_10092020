@@ -4,18 +4,15 @@ $colortertiary: #99e2d0;
 $colorbg: #f6f6f6;
 $colorfooter: #353535;
 
-$breakpoints: (
-  "mobile": (
-    min-width: 599px,
-  ),
-  "medium": (
-    min-width: 1000px,
-  ),
-  "large": (
-    min-width: 1500px,
-  ),
-);
 
 $fonttitle: "Shrikhand";
 
 $fonttext: "Roboto";
+
+$breakpoints: (
+    "phone-screen": 767px,
+    "tablette-screen": 768px,
+    "big-tablette-screen": 992px,
+    "laptop-MDPI-screen": 1025px,
+    "laptop-HIDPI-screen": 1281px,
+    "desktop-screen": 1601px,)

@@ -1,3 +1,7 @@
 @mixin box-shadows {
   box-shadow: 5px 5px 8px #dddbdb;
 }
+
+@mixin colorbtn{
+ background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
