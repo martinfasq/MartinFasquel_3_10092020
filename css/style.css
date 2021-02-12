@@ -112,6 +112,10 @@ button {
   transform: scale(1.15);
 }
 
+.header__arrow:hover::after {
+  transform: scale(1.15);
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 45px;
@@ -240,6 +244,7 @@ h3 {
   margin: 0;
   padding-left: 15px;
   padding-bottom: 8px;
+  font-size: 14px;
 }
 
 .menu span {
