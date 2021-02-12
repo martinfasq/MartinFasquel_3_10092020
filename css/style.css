@@ -12,6 +12,10 @@
   src: url("../polices/roboto.eot") format("embedded-opentype"), url("../polices/roboto.woff2") format("woff2"), url("../polices/roboto.woff") format("woff"), url("../polices/roboto.ttf") format("truetype"), url("../polices/roboto.svg") format("svg");
 }
 
+button {
+  font-family: 'Roboto';
+}
+
 .intro__btn {
   border: none;
   border-radius: 27px 27px 27px 27px;
@@ -22,6 +26,7 @@
   margin: 0px 83px 0px 83px;
   cursor: pointer;
   max-width: 230px;
+  font-family: 'Roboto';
 }
 
 .menu__btn {
@@ -31,9 +36,9 @@
   color: white;
   font-size: 14px;
   padding: 11px;
-  margin: 0px 83px 0px 83px;
   cursor: pointer;
   max-width: 230px;
+  font-family: 'Roboto';
 }
 
 .footer {
@@ -54,6 +59,7 @@
   list-style: none;
   padding: 0;
   margin: 0px;
+  font-family: 'roboto';
 }
 
 .footer__listElt {
@@ -67,7 +73,7 @@
 }
 
 .menu {
-  border-radius: 35px 35px;
+  border-radius: 35px 35px 0px 0px;
 }
 
 .menu__container {
@@ -99,7 +105,7 @@
   position: absolute;
   left: 16px;
   top: 30px;
-  transition: all 450ms ease-in-out;
+  transition: all 450ms ease-in;
 }
 
 .header__arrow:hover {
@@ -186,6 +192,10 @@ h3 {
   box-shadow: 5px 5px 8px #dddbdb;
 }
 
+.menu__section {
+  padding-bottom: 20px;
+}
+
 .menu__picture {
   height: 12rem;
   width: 100%;
@@ -202,6 +212,8 @@ h3 {
 
 .menu a {
   display: flex;
+  padding-bottom: 50px;
+  padding-top: 20px;
 }
 
 .menu h1 {
@@ -211,9 +223,10 @@ h3 {
 
 .menu h2 {
   font-family: "Roboto";
-  border-bottom: 3px #99e2d0 solid;
-  padding-left: 15px;
+  border-bottom: solid 3px #99e2d0;
+  width: 10%;
   font-size: 1.1rem;
+  margin-left: 10px;
 }
 
 .menu h3 {

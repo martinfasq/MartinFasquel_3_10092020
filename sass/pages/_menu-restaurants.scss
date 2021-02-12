@@ -10,6 +10,9 @@
     background-color: white;
     @include box-shadows;
   }
+  &__section {
+    padding-bottom: 20px;
+  }
   &__picture {
     height: 12rem;
     width: 100%;
@@ -19,12 +22,14 @@
     float: inline-end;
   }
 
-  &__btn{
+  &__btn {
     margin: 0 auto;
   }
- 
-  a{
+
+  a {
     display: flex;
+    padding-bottom: 50px;
+    padding-top: 20px;
   }
 
   h1 {
@@ -33,9 +38,10 @@
   }
   h2 {
     font-family: $fonttext;
-    border-bottom: 3px $colortertiary solid;
-    padding-left: 15px;
+    border-bottom: solid 3px $colortertiary;
+    width: 10%;
     font-size: 1.1rem;
+    margin-left: 10px;
   }
   h3 {
     margin: 0;

@@ -1,3 +1,10 @@
+button{
+   font-family:'Roboto';
+}
+
+
+
+
 .intro__btn{
     border: none;
     border-radius: 27px 27px 27px 27px;
@@ -8,6 +15,7 @@
     margin: 0px 83px 0px 83px;
     cursor: pointer;
     max-width: 230px;
+    font-family: 'Roboto';
 }
 
 .menu__btn{
@@ -17,7 +25,7 @@
     color: white;
     font-size: 14px;
     padding: 11px;
-    margin: 0px 83px 0px 83px;
     cursor: pointer;
     max-width: 230px;
+    font-family: 'Roboto';
 }
