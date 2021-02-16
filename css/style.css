@@ -27,6 +27,11 @@ button {
   cursor: pointer;
   max-width: 230px;
   font-family: 'Roboto';
+  transition: all 450ms ease-in;
+}
+
+.intro__btn:hover {
+  transform: scale(1.1);
 }
 
 .menu__btn {
@@ -39,6 +44,76 @@ button {
   cursor: pointer;
   max-width: 230px;
   font-family: 'Roboto';
+  transition: all 450ms ease-in;
+}
+
+.menu__btn:hover {
+  transform: scale(1.1);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 250px;
+  align-self: center;
+}
+
+.loader > span {
+  font-weight: bold;
+  font-size: 2rem;
+  width: 0px;
+  height: 0px;
+  font-family: 'Shrikhand';
+  margin: 15px;
+  animation: bounce 1.2s infinite alternate;
+  color: #9356dc;
+}
+
+.loader > span:nth-child(2) {
+  animation-delay: 0.2s;
+  color: #ff79da;
+}
+
+.loader > span:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.loader > span:nth-child(4) {
+  animation-delay: 0.4s;
+  color: #ff79da;
+}
+
+.loader > span:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+.loader > span:nth-child(6) {
+  animation-delay: 0.6s;
+  color: #ff79da;
+}
+
+.loader > span:nth-child(7) {
+  animation-delay: 0.7s;
+}
+
+.loader > span:nth-child(8) {
+  animation-delay: 0.8s;
+  color: #ff79da;
+}
+
+@keyframes bounce {
+  to {
+    width: 10px;
+    height: 10px;
+  }
 }
 
 .footer {
@@ -70,6 +145,10 @@ button {
 
 .footer a {
   color: white;
+}
+
+.footer i {
+  padding-right: 10px;
 }
 
 .menu {
@@ -141,12 +220,7 @@ button {
 
 .restaurant__text {
   padding-left: 5px;
-  padding-bottom: 12px;
   margin: 8px;
-}
-
-.restaurant__text i {
-  float: inline-end;
 }
 
 h1 {
@@ -165,21 +239,6 @@ h3 {
   font-family: "Roboto";
   font-weight: bold;
   letter-spacing: -0.021em;
-}
-
-.fa-heart {
-  padding: 0.2em;
-}
-
-.fa-heart::before {
-  content: "heart";
-  font-weight: bold;
-  transition: color 1s ease-out;
-}
-
-.fa-heart:hover::before {
-  color: #9356dc;
-  cursor: pointer;
 }
 
 .menu {
@@ -208,6 +267,15 @@ h3 {
 
 .menu__price {
   float: inline-end;
+}
+
+.menu__check {
+  background-color: #99e2d0;
+  width: 4rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .menu__btn {
@@ -333,6 +401,12 @@ h3 {
   text-align: center;
   padding: 0px 20px 10px 20px;
   text-align: center;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
 html {
