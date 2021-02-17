@@ -44,7 +44,26 @@ h3 {
   letter-spacing: -0.021em;
 }
 
-.heart__btn{
+.heart {
   display: flex;
   justify-content: flex-end;
+  
+  &:hover {
+    color: $colorprimary;
+  }
+
+  &__like {
+    padding-right: 8px;
+    position: relative;
+    bottom: 45px;
+  }
+
+  &__like--bg {
+    z-index: -1;
+  }
+
+  &__like--nobg {
+    position: relative;
+    left: 40px;
+  }
 }

@@ -7,13 +7,17 @@ body {
 
 
 .loader {
-    background-color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
-    top: 250px;
+    top: 0px;
+    right: 0;
+    bottom: 0;
+    left: 0;
     align-self: center;
+    background-color:rgba(0, 0, 0, 0.5);
+    animation: slide 1.2s alternate;
   }
   
   .loader > span {
@@ -23,10 +27,10 @@ body {
     height: 0px;
     font-family: 'Shrikhand';
     margin: 15px;
-    animation: bounce 1.2s infinite alternate;
+
     color: $colorprimary;
-  }
-  
+}
+
   .loader > span:nth-child(2) {
     animation-delay: 0.2s;
     color: $colorsecondary;
@@ -60,10 +64,14 @@ body {
 }
 
   
-  @keyframes bounce {
-    to {
-      width: 10px;
-      height: 10px;
+  @keyframes slide {
+
+    0% {
+        transform: translateX(0px);
     }
+    100% {
+        transform: translateX(-9999px);
+    }
+
   }
   

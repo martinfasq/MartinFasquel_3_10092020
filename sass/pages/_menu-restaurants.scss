@@ -5,7 +5,6 @@
 
   &__item {
     display: flex;
-    flex-direction: column;
     margin: 5px;
     background-color: white;
     @include box-shadows;
@@ -19,22 +18,26 @@
     object-fit: cover;
   }
   &__price {
-    float: inline-end;
+    display: flex;
+    justify-content: end;
+    align-self: center;
+    flex-grow: 1;
+    margin-right: 6px;
   }
 
   &__check {
     background-color: #99e2d0;
     width: 4rem;
-    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 1;
+    margin-right: -69px;
   }
 
   &__btn {
     margin: 0 auto;
   }
-  
 
   a {
     display: flex;
@@ -64,6 +67,8 @@
     padding-left: 15px;
     padding-bottom: 8px;
     font-size: 14px;
+    text-overflow: ellipsis;
+    overflow: hidden;
   }
 
   span {

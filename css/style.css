@@ -62,8 +62,13 @@ body {
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 250px;
+  top: 0px;
+  right: 0;
+  bottom: 0;
+  left: 0;
   align-self: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  animation: slide 1.2s alternate;
 }
 
 .loader > span {
@@ -73,7 +78,6 @@ body {
   height: 0px;
   font-family: 'Shrikhand';
   margin: 15px;
-  animation: bounce 1.2s infinite alternate;
   color: #9356dc;
 }
 
@@ -109,10 +113,12 @@ body {
   color: #ff79da;
 }
 
-@keyframes bounce {
-  to {
-    width: 10px;
-    height: 10px;
+@keyframes slide {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(-9999px);
   }
 }
 
@@ -241,6 +247,30 @@ h3 {
   letter-spacing: -0.021em;
 }
 
+.heart {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.heart:hover {
+  color: #9356dc;
+}
+
+.heart__like {
+  padding-right: 8px;
+  position: relative;
+  bottom: 45px;
+}
+
+.heart__like--bg {
+  z-index: -1;
+}
+
+.heart__like--nobg {
+  position: relative;
+  left: 40px;
+}
+
 .menu {
   background-color: #f6f6f6;
   margin-top: -50px;
@@ -249,7 +279,6 @@ h3 {
 
 .menu__item {
   display: flex;
-  flex-direction: column;
   margin: 5px;
   background-color: white;
   box-shadow: 5px 5px 8px #dddbdb;
@@ -266,16 +295,21 @@ h3 {
 }
 
 .menu__price {
-  float: inline-end;
+  display: flex;
+  justify-content: end;
+  align-self: center;
+  flex-grow: 1;
+  margin-right: 6px;
 }
 
 .menu__check {
   background-color: #99e2d0;
   width: 4rem;
-  height: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-shrink: 1;
+  margin-right: -69px;
 }
 
 .menu__btn {
@@ -313,6 +347,8 @@ h3 {
   padding-left: 15px;
   padding-bottom: 8px;
   font-size: 14px;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .menu span {
