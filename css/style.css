@@ -61,64 +61,115 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   top: 0px;
   right: 0;
   bottom: 0;
   left: 0;
   align-self: center;
-  background-color: rgba(0, 0, 0, 0.5);
-  animation: slide 1.2s alternate;
+  background-color: rgba(51, 48, 48, 0.801);
+  animation: slide 7s;
+  opacity: 0;
+  z-index: 0;
 }
 
 .loader > span {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 2.5rem;
   width: 0px;
   height: 0px;
-  font-family: 'Shrikhand';
+  font-family: "Shrikhand";
   margin: 15px;
+  animation: bounce 5s 0.5s infinite;
   color: #9356dc;
+  line-height: 12px;
 }
 
 .loader > span:nth-child(2) {
-  animation-delay: 0.2s;
+  animation-delay: 0.5s;
   color: #ff79da;
 }
 
 .loader > span:nth-child(3) {
-  animation-delay: 0.3s;
+  animation-delay: 0.6s;
 }
 
 .loader > span:nth-child(4) {
-  animation-delay: 0.4s;
+  animation-delay: 0.7s;
   color: #ff79da;
 }
 
 .loader > span:nth-child(5) {
-  animation-delay: 0.5s;
+  animation-delay: 0.8s;
 }
 
 .loader > span:nth-child(6) {
-  animation-delay: 0.6s;
+  animation-delay: 0.9s;
   color: #ff79da;
 }
 
 .loader > span:nth-child(7) {
-  animation-delay: 0.7s;
+  animation-delay: 1s;
 }
 
 .loader > span:nth-child(8) {
-  animation-delay: 0.8s;
+  animation-delay: 1.1s;
   color: #ff79da;
 }
 
 @keyframes slide {
   0% {
+    opacity: 0;
+    transform: translateX(-500px);
+    z-index: 2;
+  }
+  33% {
+    opacity: 1;
     transform: translateX(0px);
+    z-index: 2;
+  }
+  66% {
+    opacity: 1;
+    transform: translateX(0px);
+    z-index: 2;
   }
   100% {
-    transform: translateX(-9999px);
+    opacity: 0;
+    transform: translateX(-500px);
+    z-index: 2;
+  }
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0px);
+  }
+  2% {
+    transform: translateY(2px);
+  }
+  5% {
+    transform: translateY(3px);
+  }
+  8% {
+    transform: translateY(4px);
+  }
+  10% {
+    transform: translateY(5px);
+  }
+  20% {
+    transform: translateY(10px);
+  }
+  40% {
+    transform: translateY(20px);
+  }
+  60% {
+    transform: translateY(10px);
+  }
+  80% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(5);
   }
 }
 
@@ -201,6 +252,10 @@ body {
   transform: scale(1.15);
 }
 
+.wrapper {
+  z-index: 1;
+}
+
 .restaurants {
   background-color: #f6f6f6;
   padding-bottom: 45px;
@@ -252,8 +307,14 @@ h3 {
   justify-content: flex-end;
 }
 
-.heart:hover {
+.heart:hover .heart__like--nobg {
+  opacity: 0;
+}
+
+.heart:hover .heart__like--bg {
   color: #9356dc;
+  z-index: 1;
+  transition-duration: 1s;
 }
 
 .heart__like {
@@ -269,6 +330,7 @@ h3 {
 .heart__like--nobg {
   position: relative;
   left: 40px;
+  transition-duration: 0.8s;
 }
 
 .menu {
@@ -282,6 +344,10 @@ h3 {
   margin: 5px;
   background-color: white;
   box-shadow: 5px 5px 8px #dddbdb;
+  animation: itemAppear .6s;
+  animation-timing-function: cubic-bezier(0.5, 1.58, 0.34, 0.82);
+  overflow: hidden;
+  max-width: 100%;
 }
 
 .menu__section {
@@ -300,6 +366,7 @@ h3 {
   align-self: center;
   flex-grow: 1;
   margin-right: 6px;
+  font-family: 'roboto';
 }
 
 .menu__check {
@@ -310,6 +377,9 @@ h3 {
   justify-content: center;
   flex-shrink: 1;
   margin-right: -69px;
+  border-radius: 0px 15px 15px 0px;
+  transition-duration: 0.6s;
+  opacity: 0;
 }
 
 .menu__btn {
@@ -340,6 +410,9 @@ h3 {
   padding-left: 15px;
   padding-top: 10px;
   padding-bottom: 5px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  display: block;
 }
 
 .menu p {
@@ -349,10 +422,45 @@ h3 {
   font-size: 14px;
   text-overflow: ellipsis;
   overflow: hidden;
+  display: block;
+}
+
+.menu i {
+  transform: rotate(180deg);
+  transition-duration: 1s;
+  color: white;
 }
 
 .menu span {
   padding-right: 8px;
+}
+
+.menu__item:hover .menu__check {
+  margin-right: 0;
+  opacity: 1;
+}
+
+.menu__item:hover i {
+  transform: rotate(0);
+}
+
+@keyframes menuderou {
+  0% {
+    transform: translateY(2px);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(2);
+  }
+}
+
+@keyframes itemAppear {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .fonctionnement {

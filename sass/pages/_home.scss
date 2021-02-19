@@ -1,3 +1,7 @@
+.wrapper {
+  z-index: 1;
+}
+
 .restaurants {
   background-color: $colorbg;
   padding-bottom: 45px;
@@ -13,6 +17,16 @@
     width: 100%;
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
+  }
+
+  &__new {
+    background-color: $color-tertiary;
+    color: darken($color-tertiary, 50%);
+    padding: 0.5rem;
+    border-radius: 0.125rem;
+    position: absolute;
+    top: 1rem;
+    right: 0.75rem;
   }
 
   &__title {
@@ -47,9 +61,15 @@ h3 {
 .heart {
   display: flex;
   justify-content: flex-end;
-  
-  &:hover {
+
+  &:hover &__like--nobg {
+    opacity: 0;
+  }
+
+  &:hover &__like--bg {
     color: $colorprimary;
+    z-index: 1;
+    transition-duration: 1s;
   }
 
   &__like {
@@ -65,5 +85,6 @@ h3 {
   &__like--nobg {
     position: relative;
     left: 40px;
+    transition-duration: 0.8s;
   }
 }
