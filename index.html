@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
 
-
 <head>
 	<link rel="stylesheet" href="css/style.css">
 	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<script src="https://kit.fontawesome.com/bc9c992fb3.js" crossorigin="anonymous"></script>
 	<title>Ohmyfood!</title>
 </head>
@@ -26,15 +26,15 @@
 		<h1>ohmyfood</h1>
 	</header>
 
-	<section class="local">
+	<div class="local">
 		<i class="fas fa-map-marker-alt local__icon"></i>
 		<span class="local__text">Paris, Belleville</span>
-	</section>
+	</div>
 
 	<section class="intro">
 		<h2 class="intro__title">Réservez le menu qui vous convient</h2>
 		<p class="intro__text">Découvrez des restaurants d'exception, séléctionnés par nos soins.</p>
-		<a href="#"><button class="intro__btn" name="button">Explorer nos restaurants</button></a>
+		<a href="#"><div class="intro__btn">Explorer nos restaurants</div></a>
 
 	</section>
 
@@ -68,7 +68,7 @@
 			<article class="restaurant">
 				<img class="restaurant__picture" src="./img/lanoteenchantee.jpg"
 					alt="plat du restaurant la note enchantee">
-					<div class="restaurant__new">Nouveau</div>
+					<span class="restaurant__new">Nouveau</span>
 				<h3 class="restaurant__title">La note enchantée</h3>
 				<p class="restaurant__text">Charonne</p>
 				<div class="heart">

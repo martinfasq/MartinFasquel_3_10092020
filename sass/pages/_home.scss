@@ -20,13 +20,15 @@
   }
 
   &__new {
-    background-color: $color-tertiary;
-    color: darken($color-tertiary, 50%);
+    font-family: $fonttext;
+    background-color: $colortertiary;
+    color: darken($colortertiary, 50%);
     padding: 0.5rem;
     border-radius: 0.125rem;
     position: absolute;
-    top: 1rem;
-    right: 0.75rem;
+    right: 1.75rem;
+    margin-top: 9px; 
+
   }
 
   &__title {
@@ -43,6 +45,12 @@
 h1 {
   font-family: $fonttitle;
   font-weight: normal;
+}
+
+.restaurant h2{
+  @include rwd{
+    grid-column: 1/-1;
+  }
 }
 
 p,

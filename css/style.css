@@ -169,7 +169,7 @@ body {
     transform: translateY(20px);
   }
   100% {
-    transform: translateY(5);
+    transform: translateY(5px);
   }
 }
 
@@ -191,7 +191,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0px;
-  font-family: 'roboto';
+  font-family: "Roboto";
 }
 
 .footer__listElt {
@@ -274,6 +274,17 @@ body {
   border-radius: 15px 15px 0px 0px;
 }
 
+.restaurant__new {
+  font-family: "Roboto";
+  background-color: #99e2d0;
+  color: #1b6150;
+  padding: 0.5rem;
+  border-radius: 0.125rem;
+  position: absolute;
+  right: 1.75rem;
+  margin-top: 9px;
+}
+
 .restaurant__title {
   padding-left: 5px;
   margin: 8px;
@@ -333,6 +344,13 @@ h3 {
   transition-duration: 0.8s;
 }
 
+@media screen and (min-width: 750px) and (max-width: 1994px) {
+  .restaurants {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 .menu {
   background-color: #f6f6f6;
   margin-top: -50px;
@@ -366,7 +384,7 @@ h3 {
   align-self: center;
   flex-grow: 1;
   margin-right: 6px;
-  font-family: 'roboto';
+  font-family: "Roboto";
 }
 
 .menu__check {
@@ -481,7 +499,7 @@ h3 {
   counter-increment: item;
   margin-bottom: 5px;
   font-weight: bold;
-  font-family: "roboto";
+  font-family: "Roboto";
   font-size: 14px;
   transition: background-color 650ms ease-out;
 }
@@ -523,7 +541,7 @@ h3 {
 }
 
 .local__text {
-  font-weight: 350;
+  font-weight: 100;
   font-family: "Roboto";
 }
 
