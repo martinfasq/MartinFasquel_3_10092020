@@ -47,11 +47,7 @@ h1 {
   font-weight: normal;
 }
 
-.restaurant h2{
-  @include rwd{
-    grid-column: 1/-1;
-  }
-}
+
 
 p,
 h2,

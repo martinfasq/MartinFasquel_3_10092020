@@ -2,8 +2,4 @@
   box-shadow: 5px 5px 8px #dddbdb;
 }
 
-@mixin rwd {
-  @media screen and (max-width: map-get($breakpoints, tablette,desktop,desktop-big)) {
-    @content ;
-  }
-}
+

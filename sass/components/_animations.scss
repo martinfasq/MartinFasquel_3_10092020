@@ -18,10 +18,6 @@ body {
   animation: slide 7s;
   opacity: 0;
   z-index: 0;
-
-  @include rwd{
-    bottom: 300px;
-  }
 }
 
 .loader > span {

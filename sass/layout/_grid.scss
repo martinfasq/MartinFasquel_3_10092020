@@ -21,8 +21,14 @@
   grid-gap: 10px;
   padding: 10px;
 
-  @include rwd{
-    grid-template-columns: 1fr 1fr;
+  @media screen and (min-width: 650px) and (max-width: 1294px)  {
+      grid-template-columns: 1fr 1fr;
   }
 }
+  .restaurants h2{
+    @media screen and (min-width: 650px) and (max-width: 1294px) {
+      grid-column: 1/-1;
+    }
+  }
+
 

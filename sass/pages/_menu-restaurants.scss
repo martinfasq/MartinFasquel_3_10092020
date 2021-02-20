@@ -121,3 +121,10 @@
     transform: scale(1);
   }
 }
+
+.menu__container{
+  @media screen and (min-width: 650px) and (max-width: 1294px){
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}

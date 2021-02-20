@@ -232,6 +232,18 @@ body {
   padding: 10px;
 }
 
+@media screen and (min-width: 650px) and (max-width: 1294px) {
+  .restaurants {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 650px) and (max-width: 1294px) {
+  .restaurants h2 {
+    grid-column: 1/-1;
+  }
+}
+
 .header {
   display: flex;
   justify-content: center;
@@ -342,13 +354,6 @@ h3 {
   position: relative;
   left: 40px;
   transition-duration: 0.8s;
-}
-
-@media screen and (min-width: 750px) and (max-width: 1994px) {
-  .restaurants {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
 
 .menu {
@@ -481,6 +486,13 @@ h3 {
   }
 }
 
+@media screen and (min-width: 650px) and (max-width: 1294px) {
+  .menu__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
 .fonctionnement {
   padding-top: 20px;
   padding-bottom: 30px;
@@ -526,6 +538,13 @@ h3 {
 
 .fonctionnement__title {
   padding-left: 15px;
+}
+
+@media screen and (min-width: 650px) and (max-width: 1294px) {
+  .fonctionnement ol {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .local {
