@@ -27,12 +27,10 @@
     display: inline-block;
     position: relative;
     left: -24px;
-    
   }
   li:hover {
     background-color: #f5edff;
   }
-
   i {
     margin-right: 43px;
   }
@@ -41,8 +39,15 @@
   }
 }
 
-.fonctionnement ol{
-  @media screen and (min-width: 650px) and (max-width: 1294px) {
+/*
+   ______        ______  
+  |  _ \ \      / /  _ \ 
+  | |_) \ \ /\ / /| | | |
+  |  _ < \ V  V / | |_| |
+  |_| \_\ \_/\_/  |____/ 
+*/
+.fonctionnement ol {
+  @media screen and (min-width: 600px) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
   }

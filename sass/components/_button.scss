@@ -1,36 +1,52 @@
-button{
-   font-family:'Roboto';
+button {
+  font-family: "Roboto";
 }
 
-.intro__btn{
-    border: none;
-    border-radius: 27px 27px 27px 27px;
-    background: linear-gradient(to top left,$colorprimary,#ed73da 81%);
-    color: white;
-    font-size: 14px;
-    padding: 11px;
-    margin: 0px 83px 0px 83px;
-    cursor: pointer;
-    max-width: 230px;
-    font-family: 'Roboto';
-    transition: all 450ms ease-in;
-    &:hover{
-        transform: scale(1.10);
-    }
+/*
+   ____              _                ___       _             
+  | __ )  ___  _   _| |_ ___  _ __   |_ _|_ __ | |_ _ __ ___  
+  |  _ \ / _ \| | | | __/ _ \| '_ \   | || '_ \| __| '__/ _ \ 
+  | |_) | (_) | |_| | || (_) | | | |  | || | | | |_| | | (_) |
+  |____/ \___/ \__,_|\__\___/|_| |_| |___|_| |_|\__|_|  \___/ 
+                                                              
+*/
+.intro__btn {
+  border: none;
+  border-radius: 27px 27px 27px 27px;
+  background: linear-gradient(to top left, $colorprimary, #ed73da 81%);
+  color: white;
+  font-size: 14px;
+  padding: 11px;
+  margin: 0px 83px 0px 83px;
+  cursor: pointer;
+  max-width: 230px;
+  font-family: "Roboto";
+  transition: all 450ms ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 
-.menu__btn{
-    border: none;
-    border-radius: 27px 27px 27px 27px;
-    background: linear-gradient(to top left,$colorprimary,#ed73da 81%);
-    color: white;
-    font-size: 14px;
-    padding: 11px;
-    cursor: pointer;
-    max-width: 230px;
-    font-family: 'Roboto';
-    transition: all 450ms ease-in;
-    &:hover{
-        transform: scale(1.10);
-    }
+/*
+   ____              _                __  __                    ____           _                              _       
+  | __ )  ___  _   _| |_ ___  _ __   |  \/  | ___ _ __  _   _  |  _ \ ___  ___| |_ __ _ _   _ _ __ __ _ _ __ | |_ ___ 
+  |  _ \ / _ \| | | | __/ _ \| '_ \  | |\/| |/ _ \ '_ \| | | | | |_) / _ \/ __| __/ _` | | | | '__/ _` | '_ \| __/ __|
+  | |_) | (_) | |_| | || (_) | | | | | |  | |  __/ | | | |_| | |  _ <  __/\__ \ || (_| | |_| | | | (_| | | | | |_\__ \
+  |____/ \___/ \__,_|\__\___/|_| |_| |_|  |_|\___|_| |_|\__,_| |_| \_\___||___/\__\__,_|\__,_|_|  \__,_|_| |_|\__|___/
+                                                                                                                      
+*/
+.menu__btn {
+  border: none;
+  border-radius: 27px 27px 27px 27px;
+  background: linear-gradient(to top left, $colorprimary, #ed73da 81%);
+  color: white;
+  font-size: 14px;
+  padding: 11px;
+  cursor: pointer;
+  max-width: 230px;
+  font-family: "Roboto";
+  transition: all 450ms ease-in;
+  &:hover {
+    transform: scale(1.1);
+  }
 }

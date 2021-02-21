@@ -1,22 +1,21 @@
-@import 'utils/variables';
-@import 'utils/mixins';
+@import "utils/variables";
+@import "utils/mixins";
 
-@import 'base/fonts';
+@import "base/fonts";
 
-@import 'components/button';
-@import 'components/animations';
+@import "components/button";
+@import "components/animations";
 
-@import 'layout/footer';
-@import 'layout/grid';
-@import 'layout/header';
+@import "layout/footer";
+@import "layout/grid";
+@import "layout/header";
 
+@import "pages/home";
+@import "pages/menu-restaurants";
+@import "pages/fonctionnement";
+@import "pages/localisation";
+@import "pages/intro";
 
-@import 'pages/home';
-@import 'pages/menu-restaurants';
-@import 'pages/fonctionnement';
-@import 'pages/localisation';
-@import 'pages/intro';
+@import "themes/default";
 
-@import 'themes/default';
-
-@import 'vendors/normalize';
+@import "vendors/normalize";

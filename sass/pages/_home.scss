@@ -1,7 +1,6 @@
 .wrapper {
   z-index: 1;
 }
-
 .restaurants {
   background-color: $colorbg;
   padding-bottom: 45px;
@@ -18,7 +17,6 @@
     object-fit: cover;
     border-radius: 15px 15px 0px 0px;
   }
-
   &__new {
     font-family: $fonttext;
     background-color: $colortertiary;
@@ -27,15 +25,12 @@
     border-radius: 0.125rem;
     position: absolute;
     right: 1.75rem;
-    margin-top: 9px; 
-
+    margin-top: 9px;
   }
-
   &__title {
     padding-left: 5px;
     margin: 8px;
   }
-
   &__text {
     padding-left: 5px;
     margin: 8px;
@@ -46,22 +41,23 @@ h1 {
   font-family: $fonttitle;
   font-weight: normal;
 }
-
-
-
-p,
-h2,
-h3 {
+p,h2,h3 {
   font-family: $fonttext;
 }
-
-h2,
-h3 {
+h2,h3 {
   font-family: $fonttext;
   font-weight: bold;
   letter-spacing: -0.021em;
 }
 
+/*
+   ___                   ____                      
+  |_ _|___ ___  _ __    / ___|___   ___ _   _ _ __ 
+   | |/ __/ _ \| '_ \  | |   / _ \ / _ \ | | | '__|
+   | | (_| (_) | | | | | |__| (_) |  __/ |_| | |   
+  |___\___\___/|_| |_|  \____\___/ \___|\__,_|_|   
+                                                   
+*/
 .heart {
   display: flex;
   justify-content: flex-end;
@@ -69,23 +65,19 @@ h3 {
   &:hover &__like--nobg {
     opacity: 0;
   }
-
   &:hover &__like--bg {
     color: $colorprimary;
     z-index: 1;
     transition-duration: 1s;
   }
-
   &__like {
     padding-right: 8px;
     position: relative;
     bottom: 45px;
   }
-
   &__like--bg {
     z-index: -1;
   }
-
   &__like--nobg {
     position: relative;
     left: 40px;

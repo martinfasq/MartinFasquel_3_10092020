@@ -6,11 +6,11 @@
     left: 16px;
     top: 30px;
     transition: all 450ms ease-in;
-    &:hover{
-        transform: scale(1.15);
-    &::after{
+    &:hover {
       transform: scale(1.15);
-    }   
+      &::after {
+        transform: scale(1.15);
+      }
     }
   }
 }
